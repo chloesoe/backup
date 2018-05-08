@@ -1,0 +1,7 @@
+/.PlayOnLinux
+/.wine
+/PlayOnLinux\'s\ virtual\ drives
+/PlayOnLinux's virtual drives
+/VirtualBox VMs/
+/VirtualBox\ VMs/
+

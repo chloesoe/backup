@@ -1,0 +1,26 @@
+/VirtualBox VMs
+/.cache
+/.dbus
+/tmp
+/backup
+/Videos
+/Downloads
+/.local/share/Trash
+/.gftp/cache
+/.macromedia
+/.lastpass
+/.mozilla/firefox/wgqyfi1l.default/datareporting
+/.mozilla/firefox/wgqyfi1l.default/jetpack
+/.mozilla/firefox/wgqyfi1l.default/healthreport
+/.mozilla/firefox/wgqyfi1l.default/minidumps
+/.mozilla/firefox/wgqyfi1l.default/crashes
+/.mozilla/firefox/Crash\ Reports
+/.mozilla/firefox/Crash Reports
+/.mozilla/firefox/Pending\ Pings
+/.mozilla/firefox/Pending Pings
+/.adobe
+/.PlayOnLinux
+/.wine
+/.mozilla/firefox/wgqyfi1l.default/extensions
+/PlayOnLinux\'s\ virtual\ drives
+/PlayOnLinux's virtual drives
