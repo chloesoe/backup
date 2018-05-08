@@ -4,6 +4,7 @@
 #dirs without a slash at the end
 sourcedir=/home/dhw
 backupdir=/media/dhw/hetzner
+excludefile=/home/dhw/bin/cloud-exclude.txt
 label=dhw
 
 #mount backup direcorty with sshfs
@@ -25,7 +26,7 @@ trap 'int_handler' INT
 #test if backupdir is mounted 
 #if test -d $backupdir; then
 if mount | grep $backupdir > /dev/null; then
-    rsync -avzk --delete --log-file=/home/dhw/backup/cloud-backup_$(date +'%Y%m%d').log --exclude-from 'cloud-exclude.txt' "$sourcedir/" "$backupdir/$label"
+    rsync -avzk --delete --log-file=/home/dhw/backup/cloud-backup_$(date +'%Y%m%d').log --exclude-from=/$excludefile "$sourcedir/" "$backupdir/$label"
 else
     echo "Backup drive not found!"
 fi
