@@ -1,4 +1,4 @@
-# Backup scripts for homefolder
+# Backup scripts for home folder
 1. Get the repo with ```git@github.com:chloesoe/backup.git```
 2. Edit the parameters at disk-backup.sh and cloud-backup.sh.
   * For disk-backup.sh you need a mounted drive
