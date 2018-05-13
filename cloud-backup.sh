@@ -8,6 +8,8 @@
 # dirs without a slash at the end
 sourcedir=/home/dhw
 backupdir=/media/dhw/hetzner
+logdir=/home/dhw/Backup/log
+# rsync exclude file, path has to be relative to the sourcedir
 excludefile=/home/dhw/backup/cloud-exclude.txt
 label=dhw
 ssh_identiyfile=/home/dhw/.ssh/cloud_key
@@ -32,7 +34,7 @@ trap 'int_handler' INT
 
 
 if mount | grep $backupdir > /dev/null; then
-    rsync -avzk --delete --log-file=/home/dhw/backup/cloud-backup_$(date +'%Y%m%d').log --exclude-from=$excludefile "$sourcedir/" "$backupdir/$label"
+    rsync -avzk --delete --log-file=$logdir/cloud-backup_$(date +'%Y%m%d').log --exclude-from=$excludefile "$sourcedir/" "$backupdir/$label"
 else
     echo "Backup drive not found!"
 fi

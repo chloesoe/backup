@@ -24,3 +24,4 @@
 /.mozilla/firefox/wgqyfi1l.default/extensions
 /PlayOnLinux\'s\ virtual\ drives
 /PlayOnLinux's virtual drives
+/.davfs2/cache/
