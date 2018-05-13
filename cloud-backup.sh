@@ -6,9 +6,10 @@ sourcedir=/home/dhw
 backupdir=/media/dhw/hetzner
 excludefile=/home/dhw/bin/cloud-exclude.txt
 label=dhw
+ssh_identiyfile=/home/dhw/.ssh/hetzner_u159931 
 
 #mount backup direcorty with sshfs
-sshfs u159931@u159931.your-storagebox.de:/ $backupdir -o IdentityFile=/home/dhw/.ssh/hetzner_u159931 -o idmap=user -o uid=$(id -u) -o gid=$(id -g)
+sshfs u159931@u159931.your-storagebox.de:/ $backupdir -o IdentityFile=$ssh_identiyfile -o idmap=user -o uid=$(id -u) -o gid=$(id -g)
 
 
 cd $sourcedir

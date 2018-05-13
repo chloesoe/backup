@@ -4,7 +4,7 @@
 #dirs without a slash at the end
 sourcedir=/home/dhw
 backupdir=/media/dhw/wd_ext4
-logdir=/home/dhw/backup/log
+logdir=/home/dhw/Backup/log
 excludefile=/home/dhw/bin/backup-exclude.txt
 label=dhw_`date +%Y-%m-%d_%A`
 
