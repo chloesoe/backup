@@ -10,7 +10,7 @@ sourcedir=/home/dhw
 backupdir=/media/dhw/hetzner
 logdir=/home/dhw/Backup/log
 # rsync exclude file, path has to be relative to the sourcedir
-excludefile=/home/dhw/backup/cloud-exclude.txt
+excludefile=$(dirname "$0")/backup-exclude.txt
 label=dhw
 ssh_identiyfile=/home/dhw/.ssh/cloud_key
 # storage url file has to look like "user@example.com"
