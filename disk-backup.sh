@@ -6,7 +6,7 @@
 sourcedir=/home/dhw
 backupdir=/media/dhw/wd_ext4
 logdir=/home/dhw/Backup/log
-excludefile=/home/dhw/bin/backup-exclude.txt
+excludefile=$(dirname "$0")/backup-exclude.txt
 label=dhw_`date +%Y-%m-%d_%A`
 
 #int_handler makes sure, the after action with link is not take place
