@@ -10,7 +10,7 @@ sourcedir=/home/dhw
 backupdir=/media/dhw/hetzner
 logdir=/home/dhw/Backup/log
 # rsync exclude file, path has to be relative to the sourcedir
-excludefile=$(dirname "$0")/backup-exclude.txt
+excludefile=$(dirname "$0")/cloud-exclude.txt
 label=dhw
 ssh_identiyfile=/home/dhw/.ssh/cloud_key
 # storage url file has to look like "user@example.com"
@@ -18,8 +18,6 @@ ssh_storageurl=`cat /home/dhw/.ssh/storage_url`
 
 #mount backup direcorty with sshfs
 sshfs $ssh_storageurl:/ $backupdir -o IdentityFile=$ssh_identiyfile -o idmap=user -o uid=$(id -u) -o gid=$(id -g)
-
-cd $sourcedir
 
 # int_handler makes sure, the destination is unmounted
 int_handler()
